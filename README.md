@@ -22,7 +22,7 @@ pip install -r requirements.txt
 >>"to": "to_han@gmail.com",  
 >>"hostname": "smtp.gmail.com",  
 >>"username": "from_francis@gmail.com",  
->>"password": "123456",  
+>>"password": "123456",**  
 >>  
 ### Run
 Linux:  ```(sudo) nohup python3 -u CUGBgraNewsAlert.py > /usr/local/src/NewsCrawl/log/CUGBgraout.log 2>&1 &```  
