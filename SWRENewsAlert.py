@@ -24,16 +24,6 @@ def getSWREgnews():
             return links
 
 
-# 浙水院Demo
-# def getZJWEUnews():
-#     url = 'http://www.zjweu.edu.cn/386/list.htm'
-#     headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:71.0) Gecko/20100101 Firefox/71.0"}
-#
-#     response = requests.get(url=url,headers=headers).content
-#     soup = BeautifulSoup(response, 'html.parser')
-#     links = soup.findAll("ul", {"class": "news_list list2"})[0].findAll('a')
-#     return links
-
 def JudgeNews():
     signal = 0
     links = getSWREgnews()  # 调用getSWREnews()函数获取信息
@@ -58,7 +48,7 @@ def JudgeNews():
 
 if __name__ == "__main__":
     NewsTitle = []  # 程序首次运行，创建一个新闻标题空列表
-    links = getSWREgnews()  # 调用getZJWEUnews()函数获取信息
+    links = getSWREgnews()
     for i in links:
         NewsTitle.append(i.get('title'))  # 将新闻标题信息全部保存于NewsTitle列表中
     print("程序监测启动时间: " + str(datetime.datetime.now()))
