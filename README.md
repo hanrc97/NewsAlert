@@ -1,6 +1,5 @@
 # NewsAlert
-An python script for CUGB's News Alert  
-中国地质大学（北京）研院和二级学院的重要新闻及通知的及时获取脚本  
+
 
 ## UPDATES
 ### **2021/02/07 - Newly launched**  
